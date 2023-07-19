@@ -1,8 +1,5 @@
 $(function () {
     "use strict";
-    $(window).on("load", function () {
-        $(".landing h1").css("opacity", "1");
-    });
     $(".nav-link").on("click", function () {
         $(".nav-link").removeClass('active-nav');
         $(this).addClass('active-nav');
@@ -12,7 +9,7 @@ $(function () {
     });
     $(window).on("scroll", function () {
         var scrollTop = $(window).scrollTop()
-        if (scrollTop > 80) {
+        if (scrollTop > 100) {
             $(".navbar").css({
                 "background-color": "var(--nav-color)",
                 "box-shadow": "0 0 10px #777"
@@ -31,7 +28,7 @@ $(function () {
         $(".btn").toggleClass("close");
         $(".input").toggleClass("inclicked");
     })
-    let controller = true
+    let controller = false
     $(".wa-circle").on("click", function () {
         controller = !controller;
         controller ? $(".wa-circle").css("box-shadow", "0 0 5px #373170") : $(".wa-circle").css("box-shadow", "inset 0 0 5px #373170")
@@ -39,6 +36,10 @@ $(function () {
         $(".tech-sup").toggleClass("open-tech");
         $(".sales").toggleClass("open-sales");
     });
+
+    
+
+    
     let darkMood = JSON.parse(localStorage.getItem("darkMood"))
     const darkModeFun = () => {
         if (darkMood === true) {
@@ -98,7 +99,7 @@ $(function () {
         };
     });
     darkModeFun()
-    $(".drag").draggable();
+    
     
 })
 

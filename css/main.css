@@ -303,7 +303,7 @@ body {
     position: relative;
     padding: 10px;
     transition: all 1000ms;
-    opacity: 0;
+    opacity:1;
 }
 
 .landing h1::before {
@@ -719,6 +719,7 @@ body {
     background-color: #f6b2529d;
     border-radius: 20px;
     transition: all 200ms;
+    color: var(--main-text-color);
 }
 
 .product-table:hover {
@@ -1292,5 +1293,6 @@ body {
     .links-content {
         width: 100%;
     }
+    
 
 }
