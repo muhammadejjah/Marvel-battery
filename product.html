@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/xzoom.min.css">
     <title>Marvel Battery</title>
 </head>
 
@@ -168,7 +169,8 @@
                             <a class="nav-link" href="contact-us-2.html">Contact Us</a>
                         </li>
                         <li class="nav-item  me-lg-5">
-                            <i id="" style="font-size: 1.8rem;" class="fa-solid darkMood mt-1 fa-circle-half-stroke"></i>
+                            <i id="" style="font-size: 1.8rem;"
+                                class="fa-solid darkMood mt-1 fa-circle-half-stroke"></i>
                         </li>
                         <li class="nav-item mt-1 ">
                             <form class="search-box" action="index.html" method="post">
@@ -177,7 +179,7 @@
                             </form>
                         </li>
                     </ul>
-                    
+
                 </div>
             </div>
         </nav>
@@ -198,23 +200,22 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-6 col-lg-4">
-                <div class="d-flex justify-content-between ">
-                    <div class="d-flex flex-column justify-content-center my-5">
-                        <div class="p-2">
-                            <img class="img-fluid main-product-img " width="300px" name="productImg"
-                                src="images/1- 8.png" alt="">
+                <div class=" d-flex justify-content-between  ">
+                    <div class="d-flex flex-column">
+                        <div class="container">
+                            <img class="xzoom img-fluid main-product-img" width="85%" id="xzoom-fancy"
+                                src="images/111111.jpg" xoriginal="images/111111.jpg" />
+                            <div class="xzoom-thumbs mt-4 d-flex justify-content-around w-100">
+                                <a href="images/111111.jpg"><img class="xzoom-gallery" width="80" src="images/111111.jpg"
+                                        xpreview="images/1- 8.png"></a>
+                                <a href="images/batteries.png"><img class="xzoom-gallery" width="80"
+                                        src="images/batteries.png"></a>
+                                <a href="images/other.png"><img class="xzoom-gallery" width="80" src="images/other.png"
+                                        title=></a>
+                            </div>
                         </div>
-                        <div
-                            class="d-flex justify-content-around align-items-center w-100 px-4 my-5 product-imgs-content ">
-                            <img onclick=productImg.src=this.src style="width: 4.5rem;" class="shadow"
-                                src="images/1- 8.png" alt="">
-                            <img onclick=productImg.src=this.src style="width: 4.5rem;" class="shadow"
-                                src="images/batteries.png" alt="">
-                            <img onclick=productImg.src=this.src style="width: 4.5rem;" class="shadow"
-                                src="images/other.png" alt="">
-                        </div>
-                        <a class="marvel-btn w-100 text-center px-4 rounded" href="#"><span><i
-                                    class="fa-solid fa-download mx-3"></i></span>Download Image </a>
+                        <a class="marvel-btn  text-center px-4 rounded mt-3" href="#"><span><i
+                            class="fa-solid fa-download mx-3 "></i></span>Download Image </a>
                     </div>
                     <div class="product-line ">
                     </div>
@@ -366,9 +367,12 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/xzoom.min.js">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    
     <script src="js/main.js"></script>
     <script>
         $(".product-input").on("focus", function () {

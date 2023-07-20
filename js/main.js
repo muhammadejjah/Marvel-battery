@@ -29,12 +29,25 @@ $(function () {
         $(".input").toggleClass("inclicked");
     })
     let controller = false
+    let whatsapp = () => {
+        if (controller) {
+            $(".wa-circle").css("box-shadow", "0 0 5px #373170")
+            $("#wa,#down").toggleClass("opacity-0");
+            $(".tech-sup").addClass("open-tech");
+            $(".sales").addClass("open-sales");
+        }
+        else {
+            $(".wa-circle").css("box-shadow", "inset 0 0 5px #373170")
+            $("#wa,#down").toggleClass("opacity-0");
+            $(".tech-sup").removeClass("open-tech");
+            $(".sales").removeClass("open-sales");
+        }
+
+
+    }
     $(".wa-circle").on("click", function () {
         controller = !controller;
-        controller ? $(".wa-circle").css("box-shadow", "0 0 5px #373170") : $(".wa-circle").css("box-shadow", "inset 0 0 5px #373170")
-        $("#wa,#down").toggleClass("opacity-0");
-        $(".tech-sup").toggleClass("open-tech");
-        $(".sales").toggleClass("open-sales");
+        whatsapp()
     });
     let darkMood = JSON.parse(localStorage.getItem("darkMood"))
     const darkModeFun = () => {
@@ -51,7 +64,7 @@ $(function () {
                 "box-shadow": "none"
             });
             $(".landing").css("filter", "brightness(90%)");
-            
+
         }
         else {
             $(":root").css({
@@ -66,7 +79,7 @@ $(function () {
                 "box-shadow": "0 0 8px 20px #0E83B1"
             });
             $(".landing").css("filter", "brightness(100%)");
-            
+
         }
     }
     let dark = JSON.parse(localStorage.getItem("darkMood"))
@@ -98,7 +111,7 @@ $(function () {
         };
     });
     darkModeFun()
-    
-    
+
+
 })
 
