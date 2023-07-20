@@ -36,10 +36,6 @@ $(function () {
         $(".tech-sup").toggleClass("open-tech");
         $(".sales").toggleClass("open-sales");
     });
-
-    
-
-    
     let darkMood = JSON.parse(localStorage.getItem("darkMood"))
     const darkModeFun = () => {
         if (darkMood === true) {
@@ -54,6 +50,7 @@ $(function () {
                 "background-image": "none",
                 "box-shadow": "none"
             });
+            $(".landing").css("filter", "brightness(90%)");
             
         }
         else {
@@ -61,12 +58,14 @@ $(function () {
                 "--body-color": " #ffff",
                 "--main-text-color": "#373170",
                 "--nav-color": "#ffff",
+                "--form-color": "white"
             });
             $("footer").css({
                 "background-color": "#141414",
                 "background-image": "linear-gradient(180deg, #0E83B1, #0B71A8, #144D8B, #3C2866)",
                 "box-shadow": "0 0 8px 20px #0E83B1"
             });
+            $(".landing").css("filter", "brightness(100%)");
             
         }
     }
