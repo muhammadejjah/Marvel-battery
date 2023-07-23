@@ -673,18 +673,15 @@ body {
     }
 }
 
-.main-product-img {
-    border-radius: 10px;
-    width: 85%;
+.xactive {
+    border: none !important;
 }
 
-.xactive {
-    box-shadow: 0 0 10px rgb(105, 152, 245);
-}
 .xzoom-gallery {
     transition: all 300ms;
     border-radius: 10px;
 }
+
 .xzoom-gallery:hover {
     filter: brightness(80%);
 }
@@ -761,21 +758,22 @@ body {
 
 .Similar-Products a:hover {
     color: var(--hover-color);
-    
+
 }
 
-.pagination .page-item{
+.pagination .page-item {
     margin: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
-.pagination .page-link{
+
+.pagination .page-link {
     border-radius: 50%;
-    box-shadow:none;
+    box-shadow: none;
     border: none;
-    width: 30px!important;
+    width: 30px !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -783,7 +781,8 @@ body {
     background-color: var(--form-color);
 
 }
-.pagination .page-link.active{
+
+.pagination .page-link.active {
     background-color: #ffc368;
     box-shadow: 0 0 7px #aaa;
 }
